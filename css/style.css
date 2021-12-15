@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+header{
+    background: #303036;
+    padding: 10px;
+}
+body{
+    /* font-family: 'Istok Web', sans-serif; */
+    font-family: 'Poppins', sans-serif !important;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+.far,.fab{
+    color: grey;
+    margin: 0 5px;
+}
+header a{
+    color: #fff;
+}
+/* nav */
+nav{
+    background: #FFFFFF;
+    padding: 22px;
+    position: relative;
+   
+}
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav li a{
+    color: black;
+}
+.inner{
+    padding: 5% 1%;
+}
+.box{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/img/bg.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.box div{
+    width: 30%;
+    /* text-align: center; */
+    margin-left: 50px;
+}
+.box div h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.box div p{
+    color: #e7e7e7;
+    line-height: 30px;
+    margin: 20px 0;
+}
+/* btn */
+.btn{
+    border-radius: 4px;
+    border: 2px solid #303036;
+    padding: 12px 22px;
+    display: inline-block;
+    margin: 20px 0;
+    transition: .5s all;
+    color: #FFFFFF;
+    background:black;
+}
+.alert,.error{
+    color: red;
+}
+
+.head{
+    text-align: center;
+    margin: 10px 0;
+}
+.head .heading{
+    font-size: 1.8rem;
+
+}
+.heading{
+    color: #5A20CB;
+    font-weight: 500;
+    font-weight: 2.8rem;
+    font-family: 'Poppins', sans-serif !important;
+}
+.sub-heading{
+    font-weight: 1.8rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: rgb(11, 154, 214);
+}
+
+.ani{
+    animation: spin  4s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.box-1{
+    width: 100%;
+    padding: 50px;
+    min-height: 70vh;
+}
+.card{
+    
+    width:30%;
+    margin: 20px;
+    flex: 1 1 30%;
+    padding: 10px;
+}
+.card h1{
+    margin: 20px 0;
+}
+.card p{
+    color: grey;
+}
+nav button{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-top: 2px solid black;
+    border-bottom:2px solid black;
+    display: none;
+    
+}
+.overlay{
+    border: 1px solid orange;
+}
+.team{
+    text-align: center;
+    transition: 0.3s all;
+    line-height: 35px;
+    border-radius: 10px;
+    width:20%;
+    margin: 20px;
+    /* flex: 1 1 30%; */
+ 
+    
+}
+.team img{
+    border-radius: 50%;
+    border: 5px solid #e3fbff;
+    object-fit: cover;
+
+}
+.team-heading{
+
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+form{
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30);
+    position: relative;
+}
+form .input{
+    display: inline-block;
+    width:100%;
+    height: 50px;
+    border-radius: 4px;
+    background: gainsboro;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+#btn{
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+   display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background: rgb(11, 154, 214);
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+#submit{
+    margin: 10px 0;
+}
+#submit .fas{
+    color: green;
+  
+    
+}
+.box-1 > img{
+    width: 30%;
+}
+
+footer{
+    width: 100%;
+    line-height: 30px;
+    
+}
+footer p{
+    color: #000000B3;
+    width: 80%;
+    text-align: center;
+}
+
+footer i{
+    color: rgb(11, 154, 214);
+    margin: 0 5px;
+}
+#open,#close{
+    display: none;
+}
+.test{
+    background: #fdfbf254;
+    margin: 20px 0;
+}
+footer{
+    background:#5A20CB;
+    color: #fff;
+    line-height: 40px;
+    margin: 20px 0 0 0;
+}
+footer li a{
+    color: #fff;
+}
+footer i.far,.fas{
+    color: orange;
+}
+.social{
+    margin: 20px 0;
+}
+.social .fab{
+    padding: 10px;
+    background: orange;
+    color: #e7e7e7;
+
+}
+@media(max-width:600px){
+    #open{
+        display: block;
+    }
+    .box-1{
+        padding: 0;
+    }
+    .card{
+        width: 80%;
+    }
+    #close{
+display: block;
+position: absolute;
+top: 3%;
+right: 8%;
+background: violet;
+padding: 6px 8px;
+color: #fff;
+border: 10px;
+    }
+    .container{
+        text-align: center;
+    }
+.box div{
+    width: 80%;
+    text-align: center;
+}
+form{
+    width: 80%;
+}
+.box-1 > img{
+    width: 80%;
+}
+.team{
+    margin: 20px 0;
+    width: 80%;
+    
+}
+
+
+#sideBar{
+    height: 100%;
+    width: 0;
+    display: inline-block;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+#sideBar li{
+    display:block;
+    margin: 10px;
+}
+nav button{
+    display: block;
+}
+footer{
+    text-align: center;
+}
+}
